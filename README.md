@@ -10,7 +10,7 @@
 
 **App description**
 
-**[https://docs.google.com/document/d/1Njk3AQPWHmfTjU64ocGTOqFZbfn33G_1rbS3lhi4GrI/edit?usp=sharing Idea Proposal]**
+**[Idea Proposal](https://docs.google.com/document/d/1Njk3AQPWHmfTjU64ocGTOqFZbfn33G_1rbS3lhi4GrI/edit?usp=sharing)**
 
 **Calendar**
 
