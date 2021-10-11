@@ -3,10 +3,14 @@
 **App name**
 
 **Team** 
+* Kevin Lutz
+* Aleya Corretjer
+* Tyheir Brooks
+* Paul Spadaccini
 
 **App description**
 
-**Idea Proposal**
+**[https://docs.google.com/document/d/1Njk3AQPWHmfTjU64ocGTOqFZbfn33G_1rbS3lhi4GrI/edit?usp=sharing Idea Proposal]**
 
 **Calendar**
 
