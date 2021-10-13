@@ -3,10 +3,10 @@
 **App name**
 
 **Team** 
-* Kevin Lutz
-* Aleya Corretjer
-* Tyheir Brooks
-* Paul Spadaccini
+* [Kevin Lutz](https://github.com/kevinrlutz)
+* [Aleya Corretjer](https://github.com/aleyacorretjer)
+* [Tyheir Brooks](https://github.com/tydolla00)
+* [Paul Spadaccini](https://github.com/spadpaul)
 
 **App description**
 
