@@ -4,6 +4,7 @@
 Pace Eats
 
 **Team** 
+![Team 2](https://i.imgur.com/ZAdsBFy.jpg)
 * [Kevin Lutz](https://github.com/kevinrlutz)
 * [Aleya Corretjer](https://github.com/aleyacorretjer)
 * [Tyheir Brooks](https://github.com/tydolla00)
