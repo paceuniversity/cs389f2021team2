@@ -1,6 +1,7 @@
 # cs389f2021team2
 
 **App name**
+Pace Eats
 
 **Team** 
 * [Kevin Lutz](https://github.com/kevinrlutz)
