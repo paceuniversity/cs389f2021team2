@@ -18,7 +18,7 @@ Pace Eats
 
 **[Product Backlog](https://docs.google.com/spreadsheets/d/1xys8Q9vTms0ymemaeHigXtiNj50Fye2CS_pDN9jDKE8/edit?usp=sharing)**
 
-**Requirements Discovery (https://docs.google.com/document/d/1H2gV3pT0FhwKisbwO1dr6O6lk8LqBJ8cQXM1Yb-cCQ8/edit)**
+**[Requirements Discovery](https://docs.google.com/document/d/1H2gV3pT0FhwKisbwO1dr6O6lk8LqBJ8cQXM1Yb-cCQ8/edit)**
 
 **Architecture & Design**
 
