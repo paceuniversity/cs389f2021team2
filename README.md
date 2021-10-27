@@ -5,10 +5,10 @@ Pace Eats
 
 ### Team
 ![Team 2](https://i.imgur.com/PTwLfdp.jpg)
-* [Kevin Lutz](https://github.com/kevinrlutz)
 * [Aleya Corretjer](https://github.com/aleyacorretjer)
-* [Tyheir Brooks](https://github.com/tydolla00)
+* [Kevin Lutz](https://github.com/kevinrlutz)
 * [Paul Spadaccini](https://github.com/spadpaul)
+* [Tyheir Brooks](https://github.com/tydolla00)
 
 ### App Description
 Our app aims to help Pace students eat healthier and more sustainably at dining locations on campus. Users are able to track their calorie and macronutrient intake as well as the carbon footprint that results from the production of the food that they eat. There is also a leaderboard where users can compete against their friends to see who eats most sustainably in a given day/week/month. 
