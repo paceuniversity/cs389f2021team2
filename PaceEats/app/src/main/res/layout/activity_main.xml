@@ -7,12 +7,32 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="launchHome"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_nutrition"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_nutrition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:onClick="launchNutrition"
+        android:text="@string/nutrition"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/button_weight" />
+
+    <Button
+        android:id="@+id/button_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchWeight"
+        android:text="Weight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_more" />
 
     <Button
         android:id="@+id/button_more"
@@ -20,7 +40,11 @@
         android:layout_height="wrap_content"
         android:onClick="launchMore"
         android:text="@string/button_more"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="683dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
