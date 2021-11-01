@@ -31,6 +31,7 @@ TBD
 
 * ### [Sprint Planning](https://docs.google.com/document/d/1bGZcldw_fC9IpL9RUVFGVvyxIJg6JUpMSNXXyxbBCPc/edit?usp=sharing)
 * Scrums
+  * [Nov 1, 2021](https://docs.google.com/document/d/1Qeeaoo-3AMWoAiQrnq5hZ29AirxGT4IA6395tE64XvE/edit?usp=sharing)
 * Sprint demo - video and apk (or equivalent)
 * Spring retrospective
 
