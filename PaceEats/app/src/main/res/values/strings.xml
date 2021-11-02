@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Pace Eats</string>
     <string name="button_more">More</string>
-    <string name="nutrition">nutrition</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="home">Home</string>
+    <string name="weight">Weight</string>
 </resources>

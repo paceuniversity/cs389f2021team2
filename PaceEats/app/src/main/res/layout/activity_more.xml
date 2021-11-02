@@ -10,7 +10,7 @@
         android:id="@+id/button_home"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Home"
+        android:text="@string/home"
         android:onClick="launchHome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_nutrition"
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="launchWeight"
-        android:text="Weight"
+        android:text="@string/weight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_more" />
 
