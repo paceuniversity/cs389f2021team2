@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MoreActivity">
 
+
     <Button
         android:id="@+id/button_home"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/home"
+        android:backgroundTint="@color/theme_color"
         android:onClick="launchHome"
+        android:text="@string/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_nutrition"
         app:layout_constraintStart_toStartOf="parent" />
@@ -20,6 +22,7 @@
         android:id="@+id/button_nutrition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_color"
         android:onClick="launchNutrition"
         android:text="@string/nutrition"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +32,7 @@
         android:id="@+id/button_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_color"
         android:onClick="launchWeight"
         android:text="@string/weight"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,9 +42,56 @@
         android:id="@+id/button_more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_color"
         android:onClick="launchMore"
         android:text="@string/button_more"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
