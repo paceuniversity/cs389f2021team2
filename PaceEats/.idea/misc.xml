@@ -3,12 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Kevin/Desktop/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="..\:/Users/Kevin/Desktop/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_more.xml" value="0.245018115942029" />
         <entry key="app/src/main/res/layout/activity_nutrition.xml" value="0.245018115942029" />
-        <entry key="app/src/main/res/layout/activity_weight.xml" value="0.18020833333333333" />
+        <entry key="app/src/main/res/layout/activity_weight.xml" value="0.335" />
       </map>
     </option>
   </component>
