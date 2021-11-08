@@ -16,6 +16,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
@@ -27,7 +30,6 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(TAG, "test");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
@@ -60,6 +62,9 @@ public class LoginActivity extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success");
                                 FirebaseUser user = mAuth.getCurrentUser();
+                                DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+                                DatabaseReference ref = mDatabase.child(user.getUid());
+                                ref.child("email").setValue(email.getText().toString());
                                 startActivity(new Intent(getApplicationContext(), SetGoalsActivity.class));
                             } else {
                                 // If sign in fails, display a message to the user.
@@ -82,11 +87,8 @@ public class LoginActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "signInWithEmail:success");
-                                FirebaseUser user = mAuth.getCurrentUser();
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                Log.d(TAG, "intent created");
                                 startActivity(intent);
-                                mAuth.signOut();
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w(TAG, "signInWithEmail:failure", task.getException());
