@@ -9,7 +9,13 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.*;
+
 public class SetGoalsActivity extends AppCompatActivity {
+
+    FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
     RadioButton radioMale;
     RadioButton radioFemale;
     EditText inputAge;
@@ -58,6 +64,10 @@ public class SetGoalsActivity extends AppCompatActivity {
         else {
             goalCalories = (int)Math.round(bmr);
         }
+
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+        DatabaseReference ref = mDatabase.child(currentUser.getUid());
+        ref.child("calorieGoal").setValue(goalCalories);
 
         Toast.makeText(SetGoalsActivity.this, Integer.toString(goalCalories), Toast.LENGTH_SHORT).show();
         startActivity(new Intent(SetGoalsActivity.this, MainActivity.class));
