@@ -8,4 +8,18 @@
     <string name="sign_up">Sign Up</string>
     <string name="enter_password">Enter password</string>
     <string name="enter_email">Enter email</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="lose">Lose</string>
+    <string name="maintain">Maintain</string>
+    <string name="gain">Gain</string>
+    <string name="set_goals">Set Goals</string>
+    <string name="age">Age</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+    <string name="pounds">lbs</string>
+    <string name="gender">Gender</string>
+    <string name="weight_goal">Weight Goal</string>
+    <string name="height">Height</string>
+    <string name="submit">Submit</string>
 </resources>
