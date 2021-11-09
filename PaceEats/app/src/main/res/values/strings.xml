@@ -22,4 +22,5 @@
     <string name="weight_goal">Weight Goal</string>
     <string name="height">Height</string>
     <string name="submit">Submit</string>
+    <string name="cal_goal">Calorie Goal:</string>
 </resources>
