@@ -6,14 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MoreActivity extends AppCompatActivity {
+public class FoodRecommendations extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_more);
+        setContentView(R.layout.activity_food_recommendations);
     }
-
 
     public void launchHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);
@@ -32,9 +31,5 @@ public class MoreActivity extends AppCompatActivity {
     public void launchMore(View view) {
         Intent intent = new Intent(this, MoreActivity.class);
         startActivity(intent);
-    }
-
-    public void LaunchFoodRecommendations(View view) {
-
     }
 }

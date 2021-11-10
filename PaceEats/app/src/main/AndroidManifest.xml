@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PaceEats">
         <activity
+            android:name=".FoodRecommendations"
+            android:exported="true" />
+        <activity
             android:name=".SetGoalsActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -47,7 +50,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
