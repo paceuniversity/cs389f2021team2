@@ -33,8 +33,10 @@ TBD
 * Scrums
   * [Nov 1, 2021](https://docs.google.com/document/d/1Qeeaoo-3AMWoAiQrnq5hZ29AirxGT4IA6395tE64XvE/edit?usp=sharing)
   * [Nov 8, 2021](https://docs.google.com/document/d/1ZL1dlDNSMyLN-3UvpFKwLkurUvt0zmD8twtPKvVkYS4/edit?usp=sharing)
-* Sprint demo - video and apk (or equivalent)
-* Spring retrospective
+*  Sprint demo 
+  * [Video](https://www.youtube.com/watch?v=Ij3Oyv0vBH0)
+  * [apk](https://drive.google.com/file/d/1lFRV5ViegmFbap0bEa55Bv_wLqBarY6F/view)
+* [Sprint retrospective](https://docs.google.com/document/d/142mYbAqPl0fzjE79bRWL51WiHkhe83kWGKT8lKIepbE/edit?usp=sharing)
 
 **Sprint 2**
 

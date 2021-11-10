@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FoodRecommendations">
+
     <Button
         android:id="@+id/button_home"
         android:layout_width="0dp"
@@ -80,7 +81,11 @@
         android:id="@+id/Rec2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="48dp"
+
+        android:layout_marginTop="19dp"
+
         android:background="@color/theme_color"
         android:text="@string/wrap"
         android:textAlignment="center"
@@ -89,7 +94,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/Rec1text" />
+
+        app:layout_constraintTop_toBottomOf="@+id/editTextRec1text" />
+
 
     <TextView
         android:id="@+id/Rec2text"
@@ -108,7 +117,11 @@
         android:id="@+id/Rec3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="48dp"
+
+        android:layout_marginTop="26dp"
+
         android:background="@color/theme_color"
         android:text="@string/omelette"
         android:textAlignment="center"
@@ -117,7 +130,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/Rec2text" />
+
+        app:layout_constraintTop_toBottomOf="@+id/editTextRec2text" />
+
 
     <TextView
         android:id="@+id/textView11"
