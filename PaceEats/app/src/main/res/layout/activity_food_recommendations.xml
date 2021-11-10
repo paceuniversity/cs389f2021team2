@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FoodRecommendations">
+
     <Button
         android:id="@+id/button_home"
         android:layout_width="0dp"
@@ -85,6 +86,7 @@
         android:id="@+id/editTextRec2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
         android:background="@color/theme_color"
         android:ems="10"
         android:gravity="bottom|start|top"
@@ -96,7 +98,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="227dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextRec1text" />
 
     <EditText
         android:id="@+id/editTextRec2text"
@@ -118,6 +120,7 @@
         android:id="@+id/editTextRec3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
         android:background="@color/theme_color"
         android:ems="10"
         android:gravity="bottom|start|top"
@@ -129,7 +132,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="468dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextRec2text" />
 
     <EditText
         android:id="@+id/editTextRec3text"
