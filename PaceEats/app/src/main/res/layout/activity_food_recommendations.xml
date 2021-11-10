@@ -47,105 +47,90 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editTextRec1"
+    <TextView
+        android:id="@+id/Rec1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:background="@color/theme_color"
-        android:ems="10"
-        android:gravity="bottom|start|top"
-        android:inputType="textMultiLine"
-        android:minHeight="48dp"
-        android:text="Rice Bowl"
+        android:text="@string/rice_bowl"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextRec1text"
-        android:layout_width="394dp"
-        android:layout_height="160dp"
+    <TextView
+        android:id="@+id/Rec1text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@color/theme_color"
-        android:ems="10"
-        android:gravity="bottom|start|top"
-        android:inputType="textMultiLine"
-        android:text="First start with white rice from the Chinese station. Order a turkey burger with peppers and onions from the Grill Station. Ask them to chop the burger. Then add the chopped burger with your toppings to the white rice. Add sauce if you would like."
+        android:text="@string/first_start_with_white_rice_from_the_chinese_station_order_a_turkey_burger_with_peppers_and_onions_from_the_grill_station_ask_them_to_chop_the_burger_then_add_the_chopped_burger_with_your_toppings_to_the_white_rice_add_sauce_if_you_would_like"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRec1" />
+        app:layout_constraintTop_toBottomOf="@+id/Rec1" />
 
-    <EditText
-        android:id="@+id/editTextRec2"
+    <TextView
+        android:id="@+id/Rec2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:background="@color/theme_color"
-        android:ems="10"
-        android:gravity="bottom|start|top"
-        android:inputType="textMultiLine"
-        android:minHeight="48dp"
-        android:text="Wrap"
+        android:text="@string/wrap"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="227dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Rec1text" />
 
-    <EditText
-        android:id="@+id/editTextRec2text"
-        android:layout_width="380dp"
-        android:layout_height="167dp"
+    <TextView
+        android:id="@+id/Rec2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@color/theme_color"
-        android:ems="10"
-        android:gravity="bottom|start|top"
-        android:inputType="textMultiLine"
-        android:text="For a nice yummy wrap from the Sandwich Station order a whole wheat, spinach or tomato wrap. Add grilled chicken, mozzarella cheese, roasted red peppers and a little of balsamic dressing. "
+        android:text="@string/for_a_nice_yummy_wrap_from_the_sandwich_station_order_a_whole_wheat_spinach_or_tomato_wrap_add_grilled_chicken_mozzarella_cheese_roasted_red_peppers_and_a_little_of_balsamic_dressing"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRec2" />
+        app:layout_constraintTop_toBottomOf="@+id/Rec2" />
 
-    <EditText
-        android:id="@+id/editTextRec3"
+    <TextView
+        android:id="@+id/Rec3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:background="@color/theme_color"
-        android:ems="10"
-        android:gravity="bottom|start|top"
-        android:inputType="textMultiLine"
-        android:minHeight="48dp"
-        android:text="Omlete"
+        android:text="@string/omelette"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="468dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Rec2text" />
 
-    <EditText
-        android:id="@+id/editTextRec3text"
-        android:layout_width="393dp"
-        android:layout_height="171dp"
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@color/theme_color"
-        android:ems="10"
-        android:gravity="bottom|start|top"
-        android:inputType="textMultiLine"
-        android:text="Start your morning off with a healthy breakfast. From the Grill station order an egg white omlete with toppings like spinach, peppers, oinions, cheese, tomatoes, etc. You could also pair this with a yogurt or smoothie from the Smoothie Station."
+        android:text="@string/start_your_morning_off_with_a_healthy_breakfast_from_the_gill_station_order_an_egg_white_omlete_with_toppings_like_spinach_peppers_onions_chese_tomatoes_etc_you_could_pair_this_with_a_yogurt_or_smoothie_from_the_smoothie_station"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRec3" />
+        app:layout_constraintTop_toBottomOf="@+id/Rec3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
