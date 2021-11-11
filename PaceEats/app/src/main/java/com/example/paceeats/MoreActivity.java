@@ -38,4 +38,8 @@ public class MoreActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FoodRecommendations.class);
         startActivity(intent);
     }
+
+    public void launchAbout(View view) {
+        startActivity(new Intent(this, AboutActivity.class));
+    }
 }

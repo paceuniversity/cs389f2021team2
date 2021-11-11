@@ -10,7 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PaceEats">
         <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".MoreActivity"
+            android:exported="true" />
+        <activity
             android:name=".FoodRecommendations"
+            android:parentActivityName=".MoreActivity"
             android:exported="true" />
         <activity
             android:name=".SetGoalsActivity"

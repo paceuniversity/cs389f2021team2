@@ -23,4 +23,12 @@
     <string name="height">Height</string>
     <string name="submit">Submit</string>
     <string name="cal_goal">Calorie Goal:</string>
+    <string name="about">About PaceEats</string>
+    <string name="devs">Developers</string>
+    <string name="kevin">• Kevin Lutz</string>
+    <string name="ty">• Tyheir Brooks</string>
+    <string name="paul">• Paul Spadaccini</string>
+    <string name="aleya">• Aleya Corretjer</string>
+    <string name="description">PaceEats was created for a CS389: Software Engineering Fall 2021 semester course at Pace University by four senior Computer Science majors.\n\nIt\'s purpose is to allow Pace students to track their caloric intake as well as the environmental impact of the foods that they are eating.</string>
+    <string name="food_recs">Food Recommendations</string>
 </resources>
