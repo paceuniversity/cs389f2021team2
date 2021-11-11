@@ -23,6 +23,14 @@
     <string name="height">Height</string>
     <string name="submit">Submit</string>
     <string name="cal_goal">Calorie Goal:</string>
+    <string name="about">About PaceEats</string>
+    <string name="devs">Developers</string>
+    <string name="kevin">• Kevin Lutz</string>
+    <string name="ty">• Tyheir Brooks</string>
+    <string name="paul">• Paul Spadaccini</string>
+    <string name="aleya">• Aleya Corretjer</string>
+    <string name="description">PaceEats was created for a CS389: Software Engineering Fall 2021 semester course at Pace University by four senior Computer Science majors.\n\nIt\'s purpose is to allow Pace students to track their caloric intake as well as the environmental impact of the foods that they are eating.</string>
+    <string name="food_recs">Food Recommendations</string>
     <string name="first_start_with_white_rice_from_the_chinese_station_order_a_turkey_burger_with_peppers_and_onions_from_the_grill_station_ask_them_to_chop_the_burger_then_add_the_chopped_burger_with_your_toppings_to_the_white_rice_add_sauce_if_you_would_like">First start with white rice from the Chinese Station. Order a turkey burger with peppers and onions from the Grill Station. Ask them to chop the burger. Then add the chopped burger with your toppings to the white rice. Add sauce if you would like.</string>
     <string name="wrap">Wrap</string>
     <string name="for_a_nice_yummy_wrap_from_the_sandwich_station_order_a_whole_wheat_spinach_or_tomato_wrap_add_grilled_chicken_mozzarella_cheese_roasted_red_peppers_and_a_little_of_balsamic_dressing">For a nice yummy wrap from the Sandwich Station order a whole wheat, spinach or tomato wrap. Add grilled chicken, mozzarella cheese, roasted red peppers, and a little of balsamic dressing.</string>

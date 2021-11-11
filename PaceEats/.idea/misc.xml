@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_about.xml" value="0.33" />
         <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_food_recommendations.xml" value="0.3546875" />
         <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_login.xml" value="0.3546875" />
         <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
         <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_more.xml" value="0.3546875" />
+        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_nutrition.xml" value="0.3546875" />
         <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_set_goals.xml" value="0.3546875" />
         <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37083333333333335" />
         <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37083333333333335" />
@@ -19,4 +21,5 @@
       </map>
     </option>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
