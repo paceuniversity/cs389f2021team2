@@ -15,8 +15,6 @@ Our app aims to help Pace students eat healthier and more sustainably at dining 
 
 ### [Idea Proposal](https://docs.google.com/document/d/1Njk3AQPWHmfTjU64ocGTOqFZbfn33G_1rbS3lhi4GrI/edit?usp=sharing)
 
-### Calendar
-
 ### [Product Backlog](https://docs.google.com/spreadsheets/d/1xys8Q9vTms0ymemaeHigXtiNj50Fye2CS_pDN9jDKE8/edit?usp=sharing)
 
 ### [Requirements Discovery](https://docs.google.com/document/d/1H2gV3pT0FhwKisbwO1dr6O6lk8LqBJ8cQXM1Yb-cCQ8/edit)
@@ -40,7 +38,7 @@ TBD
 
 **Sprint 2**
 
-* Sprint planning
+* ### [Sprint planning](https://docs.google.com/document/d/1VhrAuInE1DBKFAjgVIFkDZEWcBj4KA3S-TxUZUjHjrA/edit?usp=sharing)
 * Scrums
 * Sprint demo - video and apk (or equivalent)
 * Spring retrospective
