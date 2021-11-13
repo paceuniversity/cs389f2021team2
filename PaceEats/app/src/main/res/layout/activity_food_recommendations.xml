@@ -85,7 +85,6 @@
         android:layout_marginTop="48dp"
 
 
-
         android:background="@color/theme_color"
         android:text="@string/wrap"
         android:textAlignment="center"
@@ -119,8 +118,6 @@
         android:layout_height="wrap_content"
 
         android:layout_marginTop="48dp"
-
-
 
         android:background="@color/theme_color"
         android:text="@string/omelette"
