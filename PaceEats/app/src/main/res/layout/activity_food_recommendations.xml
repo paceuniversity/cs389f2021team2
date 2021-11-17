@@ -75,34 +75,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rec1" />
+        app:layout_constraintTop_toBottomOf="@+id/Rec1" /><![CDATA[
+
+    app:layout_constraintTop_toBottomOf="@+id/editTextRec1text" />
+
+
+    ]]>
 
     <TextView
         android:id="@+id/Rec2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="48dp"
-
-
+        android:layout_marginTop="20dp"
         android:background="@color/theme_color"
         android:text="@string/wrap"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toBottomOf="@+id/Rec1text" />
-
-        app:layout_constraintTop_toBottomOf="@+id/editTextRec1text" />
-
 
     <TextView
         android:id="@+id/Rec2text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@color/theme_color"
         android:text="@string/for_a_nice_yummy_wrap_from_the_sandwich_station_order_a_whole_wheat_spinach_or_tomato_wrap_add_grilled_chicken_mozzarella_cheese_roasted_red_peppers_and_a_little_of_balsamic_dressing"
         android:textAlignment="center"
@@ -116,9 +116,7 @@
         android:id="@+id/Rec3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="48dp"
-
+        android:layout_marginTop="20dp"
         android:background="@color/theme_color"
         android:text="@string/omelette"
         android:textAlignment="center"
@@ -137,6 +135,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@color/theme_color"
         android:text="@string/start_your_morning_off_with_a_healthy_breakfast_from_the_gill_station_order_an_egg_white_omlete_with_toppings_like_spinach_peppers_onions_chese_tomatoes_etc_you_could_pair_this_with_a_yogurt_or_smoothie_from_the_smoothie_station"
         android:textAlignment="center"
