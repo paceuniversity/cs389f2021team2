@@ -3,19 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/drawable/edit_text_border.xml" value="0.312280701754386" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_about.xml" value="0.33" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_food_recommendations.xml" value="0.3546875" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_login.xml" value="0.3546875" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_more.xml" value="0.3546875" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_nutrition.xml" value="0.3546875" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/layout/activity_set_goals.xml" value="0.3546875" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37083333333333335" />
-        <entry key="..\:/Users/Kevin/Documents/cs389f2021team2/PaceEats/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37083333333333335" />
+        <entry key="app/src/main/res/drawable/edit_text_border.xml" value="0.312280701754386" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_food_recommendations.xml" value="0.3546875" />
+        <entry key="app/src/main/res/layout/activity_more.xml" value="0.3546875" />
+        <entry key="app/src/main/res/layout/activity_set_goals.xml" value="0.3546875" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37083333333333335" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37083333333333335" />
         <entry key="app/src/main/res/layout/activity_food_recommendations.xml" value="0.25" />
+
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.12183383991894631" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23777173913043478" />
+        <entry key="app/src/main/res/layout/activity_nutrition.xml" value="0.12183383991894631" />
+        <entry key="app/src/main/res/layout/activity_weight.xml" value="0.12183383991894631" />
       </map>
     </option>
   </component>

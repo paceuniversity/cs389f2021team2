@@ -86,9 +86,7 @@
         android:id="@+id/Rec2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="20dp"
-
         android:background="@color/theme_color"
         android:text="@string/wrap"
         android:textAlignment="center"
@@ -118,9 +116,7 @@
         android:id="@+id/Rec3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="20dp"
-
         android:background="@color/theme_color"
         android:text="@string/omelette"
         android:textAlignment="center"

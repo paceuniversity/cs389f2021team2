@@ -68,6 +68,7 @@ public class SetGoalsActivity extends AppCompatActivity {
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
         DatabaseReference ref = mDatabase.child(currentUser.getUid());
         ref.child("calorieGoal").setValue(goalCalories);
+        ref.child("startingWeight").setValue(weight);
 
         Toast.makeText(SetGoalsActivity.this, Integer.toString(goalCalories), Toast.LENGTH_SHORT).show();
         startActivity(new Intent(SetGoalsActivity.this, MainActivity.class));
