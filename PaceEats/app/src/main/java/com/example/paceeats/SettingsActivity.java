@@ -31,4 +31,8 @@ public class SettingsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MoreActivity.class);
         startActivity(intent);
     }
+
+    public void launchAbout(View view) {
+        startActivity(new Intent(this, AboutActivity.class));
+    }
 }
