@@ -43,13 +43,12 @@ public class MoreActivity extends AppCompatActivity {
 
 
     public void launchSettings(View view) {
-        Intent intent = new Intent(this, Settings.class);
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 
     public void launchAbout(View view) {
         startActivity(new Intent(this, AboutActivity.class));
-
     }
 
 }
