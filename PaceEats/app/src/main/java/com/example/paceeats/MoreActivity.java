@@ -20,6 +20,7 @@ public class MoreActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
     public void launchNutrition(View view) {
         Intent intent = new Intent(this, NutritionActivity.class);
         startActivity(intent);
@@ -41,13 +42,14 @@ public class MoreActivity extends AppCompatActivity {
     }
 
 
-
     public void launchSettings(View view) {
         Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
+    }
 
     public void launchAbout(View view) {
         startActivity(new Intent(this, AboutActivity.class));
 
     }
+
 }
