@@ -1,7 +1,6 @@
 # cs389f2021team2
 
-### App Name
-Pace Eats
+### App Name: Pace Eats
 
 ### Team
 ![Team 2](https://i.imgur.com/PTwLfdp.jpg)
@@ -31,9 +30,9 @@ TBD
 * Scrums
   * [Nov 1, 2021](https://docs.google.com/document/d/1Qeeaoo-3AMWoAiQrnq5hZ29AirxGT4IA6395tE64XvE/edit?usp=sharing)
   * [Nov 8, 2021](https://docs.google.com/document/d/1ZL1dlDNSMyLN-3UvpFKwLkurUvt0zmD8twtPKvVkYS4/edit?usp=sharing)
-*  Sprint demo 
+* Sprint demo 
   * [Video](https://www.youtube.com/watch?v=Ij3Oyv0vBH0)
-  * [apk](https://drive.google.com/file/d/1lFRV5ViegmFbap0bEa55Bv_wLqBarY6F/view)
+  * [APK](https://drive.google.com/file/d/1lFRV5ViegmFbap0bEa55Bv_wLqBarY6F/view)
 * [Sprint retrospective](https://docs.google.com/document/d/142mYbAqPl0fzjE79bRWL51WiHkhe83kWGKT8lKIepbE/edit?usp=sharing)
 
 **Sprint 2**
@@ -43,14 +42,14 @@ TBD
   * [Nov 15, 2021](https://docs.google.com/document/d/1t4lcrfbpaktRF5HdAga5cg0kJj0wBNSbDI5cM_PGvR8/edit?usp=sharing)
   * [Nov 17, 2021](https://docs.google.com/document/d/1sL76sp4uw9vYupU_v0HLcCoHYIdl6XMB8PjQigE2EWA/edit?usp=sharing)
 * Sprint demo - video and apk (or equivalent)
-* Spring retrospective
+* Sprint retrospective
 
 **Sprint 3** 
 
 * Sprint planning
 * Scrums
 * Sprint demo - video and apk (or equivalent)
-* Spring retrospective
+* Sprint retrospective
 
 **Final presentation**
 
@@ -59,5 +58,9 @@ TBD
 **Process description**
 
 **Communications**
+* [Discord](https://discord.com/)
 
 **Tools**
+* [Android Studio](https://developer.android.com/studio)
+* [Firebase (Auth and Realtime Database)](https://firebase.google.com/)
+* [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
