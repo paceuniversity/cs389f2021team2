@@ -69,4 +69,9 @@ public class WeightActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MoreActivity.class);
         startActivity(intent);
     }
+
+    public void addWeight(View view) {
+        Intent intent = new Intent(this, AddWeightActivity.class);
+        startActivity(intent);
+    }
 }
