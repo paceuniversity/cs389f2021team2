@@ -136,8 +136,8 @@
             android:id="@+id/goals"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Goals: Go to the Gym 5/7"
             android:onClick="launchMore"
+            android:text="Goals: Go to the Gym 5/7"
             android:textAlignment="viewStart" />
 
         <Button
