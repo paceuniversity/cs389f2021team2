@@ -38,4 +38,8 @@
     <string name="omelette">Omelette</string>
     <string name="start_your_morning_off_with_a_healthy_breakfast_from_the_gill_station_order_an_egg_white_omlete_with_toppings_like_spinach_peppers_onions_chese_tomatoes_etc_you_could_pair_this_with_a_yogurt_or_smoothie_from_the_smoothie_station">Start your morning off with a healthy breakfast. From the Gill Station order an egg white omelette with toppings like spinach, peppers, onions, cheese, tomatoes, etc. You could pair this with a yogurt or smoothie from the Smoothie Station.</string>
     <string name="rice_bowl">Rice Bowl</string>
+    <string name="footprint_text"> 20 lbs of CO2 </string>
+    <string name="app_streak">App Streak</string>
+    <string name="carbon_footprint">Current Week Carbon Footprint</string>
+    <string name="streakText">7</string>
 </resources>
