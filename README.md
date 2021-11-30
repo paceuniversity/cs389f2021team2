@@ -1,6 +1,6 @@
 # cs389f2021team2
 
-### App Name: Pace Eats
+## App Name: Pace Eats
 
 ### Team
 ![Team 2](https://i.imgur.com/PTwLfdp.jpg)
@@ -9,7 +9,7 @@
 * [Paul Spadaccini](https://github.com/spadpaul)
 * [Tyheir Brooks](https://github.com/tydolla00)
 
-### App Description
+## App Description
 Our app aims to help Pace students eat healthier and more sustainably at dining locations on campus. Users are able to track their calorie and macronutrient intake as well as the carbon footprint that results from the production of the food that they eat. There is also a leaderboard where users can compete against their friends to see who eats most sustainably in a given day/week/month. 
 
 ### [Idea Proposal](https://docs.google.com/document/d/1Njk3AQPWHmfTjU64ocGTOqFZbfn33G_1rbS3lhi4GrI/edit?usp=sharing)
@@ -22,11 +22,11 @@ Our app aims to help Pace students eat healthier and more sustainably at dining 
 
 TBD
 
-### Content
+## Content
 
-**Sprint 1**
+### Sprint 1
 
-* ### [Sprint Planning](https://docs.google.com/document/d/1bGZcldw_fC9IpL9RUVFGVvyxIJg6JUpMSNXXyxbBCPc/edit?usp=sharing)
+* #### [Sprint Planning](https://docs.google.com/document/d/1bGZcldw_fC9IpL9RUVFGVvyxIJg6JUpMSNXXyxbBCPc/edit?usp=sharing)
 * Scrums
   * [Nov 1, 2021](https://docs.google.com/document/d/1Qeeaoo-3AMWoAiQrnq5hZ29AirxGT4IA6395tE64XvE/edit?usp=sharing)
   * [Nov 8, 2021](https://docs.google.com/document/d/1ZL1dlDNSMyLN-3UvpFKwLkurUvt0zmD8twtPKvVkYS4/edit?usp=sharing)
@@ -35,32 +35,33 @@ TBD
   * [APK](https://drive.google.com/file/d/1lFRV5ViegmFbap0bEa55Bv_wLqBarY6F/view)
 * [Sprint retrospective](https://docs.google.com/document/d/142mYbAqPl0fzjE79bRWL51WiHkhe83kWGKT8lKIepbE/edit?usp=sharing)
 
-**Sprint 2**
+### Sprint 2
 
-* ### [Sprint planning](https://docs.google.com/document/d/1VhrAuInE1DBKFAjgVIFkDZEWcBj4KA3S-TxUZUjHjrA/edit?usp=sharing)
+* #### [Sprint planning](https://docs.google.com/document/d/1VhrAuInE1DBKFAjgVIFkDZEWcBj4KA3S-TxUZUjHjrA/edit?usp=sharing)
 * Scrums
   * [Nov 15, 2021](https://docs.google.com/document/d/1t4lcrfbpaktRF5HdAga5cg0kJj0wBNSbDI5cM_PGvR8/edit?usp=sharing)
   * [Nov 17, 2021](https://docs.google.com/document/d/1sL76sp4uw9vYupU_v0HLcCoHYIdl6XMB8PjQigE2EWA/edit?usp=sharing)
+  * [Nov 29, 2021](https://docs.google.com/document/d/1VMD_q1b-NhB0kRoU_lhlrUW_ztsyOcNpAgkCxeg1zL0/edit?usp=sharing)
 * Sprint demo - video and apk (or equivalent)
 * Sprint retrospective
 
-**Sprint 3** 
+### Sprint 3 
 
-* Sprint planning
+* #### Sprint planning
 * Scrums
 * Sprint demo - video and apk (or equivalent)
 * Sprint retrospective
 
-**Final presentation**
+### Final presentation
 
-**Poster**
+### Poster
 
-**Process description**
+### Process description
 
-**Communications**
+### Communications
 * [Discord](https://discord.com/)
 
-**Tools**
+### Tools
 * [Android Studio](https://developer.android.com/studio)
 * [Firebase (Auth and Realtime Database)](https://firebase.google.com/)
 * [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
