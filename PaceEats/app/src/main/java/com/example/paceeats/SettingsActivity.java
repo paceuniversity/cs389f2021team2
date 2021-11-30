@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -12,6 +16,11 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        Date today = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
+        String todayString = dateFormat.format(today).toString();
+
     }
     public void launchHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);

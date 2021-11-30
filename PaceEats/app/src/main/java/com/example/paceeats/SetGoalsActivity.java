@@ -13,6 +13,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.LinkedList;
+
 public class SetGoalsActivity extends AppCompatActivity {
 
     FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -65,10 +69,21 @@ public class SetGoalsActivity extends AppCompatActivity {
             goalCalories = (int)Math.round(bmr);
         }
 
+        Date today = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
+        String todayString = dateFormat.format(today).toString();
+
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
         DatabaseReference ref = mDatabase.child(currentUser.getUid());
+
+
+
+        //LinkedList<Integer> weights = new LinkedList();
+        //weights.add(weight);
+
         ref.child("calorieGoal").setValue(goalCalories);
         ref.child("startingWeight").setValue(weight);
+        //ref.child("weightsList").setValue(weights);
 
         Toast.makeText(SetGoalsActivity.this, Integer.toString(goalCalories), Toast.LENGTH_SHORT).show();
         startActivity(new Intent(SetGoalsActivity.this, MainActivity.class));
