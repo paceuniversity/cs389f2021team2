@@ -42,8 +42,10 @@ TBD
   * [Nov 15, 2021](https://docs.google.com/document/d/1t4lcrfbpaktRF5HdAga5cg0kJj0wBNSbDI5cM_PGvR8/edit?usp=sharing)
   * [Nov 17, 2021](https://docs.google.com/document/d/1sL76sp4uw9vYupU_v0HLcCoHYIdl6XMB8PjQigE2EWA/edit?usp=sharing)
   * [Nov 29, 2021](https://docs.google.com/document/d/1VMD_q1b-NhB0kRoU_lhlrUW_ztsyOcNpAgkCxeg1zL0/edit?usp=sharing)
-* Sprint demo - video and apk (or equivalent)
-* Sprint retrospective
+* Sprint demo 
+  * [Video](https://youtu.be/Z-JPQ1oVMXc)
+  * [APK](https://drive.google.com/file/d/1fpdCUEAVSowgHst6nl3GggGNAm6wg0Bh/view?usp=sharing)
+* [Sprint retrospective](https://docs.google.com/document/d/1h04EWz7JvvzwnI92he86NhndQhy_FWVNYfY6PzIgR2o/edit?usp=sharing)
 
 ### Sprint 3 
 
