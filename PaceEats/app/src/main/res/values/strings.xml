@@ -45,5 +45,16 @@
     <string name="streakText">7</string>
 =======
     <string name="user_start_weight">TextView</string>
+<<<<<<< HEAD
 >>>>>>> 1b77905aaa06ced712ba858903af642e98aadaf4
+=======
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Enter Current Password</string>
+    <string name="new_password">Enter New Password</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="feedback">App Feedback</string>
+    <string name="view_account">View Account</string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+>>>>>>> dbecc95d2033ce830cbafae619e09605463da93a
 </resources>

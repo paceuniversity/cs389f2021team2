@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="225dp"
         android:layout_marginBottom="50dp"
         android:text="Date:"
         android:textSize="20sp"
@@ -67,6 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
         android:ems="10"
+        android:hint="MM/DD/YY"
         android:inputType="date"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/date_text"
@@ -78,6 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="10"
+        android:hint="000.0"
         android:inputType="number"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/weight_text"
@@ -88,9 +90,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="37dp"
         android:text="Weight:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="352dp" />
+        app:layout_constraintTop_toBottomOf="@+id/date_text" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Add"
+        android:onClick="launchWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
