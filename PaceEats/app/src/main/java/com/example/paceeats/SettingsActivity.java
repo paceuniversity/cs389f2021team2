@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -69,6 +70,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     public void changePassword(View view) {
         mAuth.getCurrentUser().updatePassword(inputNewPassword.getText().toString());
+        Toast.makeText(getApplicationContext(), "Password successfully changed.", Toast.LENGTH_SHORT).show();
     }
 
     public void signOut(View view) {

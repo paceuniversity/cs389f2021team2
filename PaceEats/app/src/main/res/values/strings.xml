@@ -38,16 +38,11 @@
     <string name="omelette">Omelette</string>
     <string name="start_your_morning_off_with_a_healthy_breakfast_from_the_gill_station_order_an_egg_white_omlete_with_toppings_like_spinach_peppers_onions_chese_tomatoes_etc_you_could_pair_this_with_a_yogurt_or_smoothie_from_the_smoothie_station">Start your morning off with a healthy breakfast. From the Gill Station order an egg white omelette with toppings like spinach, peppers, onions, cheese, tomatoes, etc. You could pair this with a yogurt or smoothie from the Smoothie Station.</string>
     <string name="rice_bowl">Rice Bowl</string>
-<<<<<<< HEAD
-    <string name="footprint_text">3 CO2</string>
+    <string name="footprint_text">3 lbs CO2</string>
     <string name="app_streak">App Streak</string>
-    <string name="carbon_footprint">Carboon Footprint This Week</string>
-    <string name="streakText">7</string>
-=======
+    <string name="carbon_footprint">Carbon Footprint This Week</string>
+    <string name="streakText">7 days</string>
     <string name="user_start_weight">TextView</string>
-<<<<<<< HEAD
->>>>>>> 1b77905aaa06ced712ba858903af642e98aadaf4
-=======
     <string name="change_password">Change Password</string>
     <string name="current_password">Enter Current Password</string>
     <string name="new_password">Enter New Password</string>
@@ -56,5 +51,4 @@
     <string name="view_account">View Account</string>
     <string name="help">Help</string>
     <string name="settings">Settings</string>
->>>>>>> dbecc95d2033ce830cbafae619e09605463da93a
 </resources>
