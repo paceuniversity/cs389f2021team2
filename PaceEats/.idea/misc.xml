@@ -17,11 +17,12 @@
         <entry key="app/src/main/res/layout/activity_about.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_add_weight 2.xml" value="0.12545289855072464" />
         <entry key="app/src/main/res/layout/activity_add_weight.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_food_recommendations 2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_food_recommendations.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.12183383991894631" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_more.xml" value="0.18687084429507578" />
-        <entry key="app/src/main/res/layout/activity_nutrition.xml" value="0.12183383991894631" />
+        <entry key="app/src/main/res/layout/activity_nutrition.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_set_goals.xml" value="0.12183383991894631" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_weight.xml" value="0.2853185595567867" />

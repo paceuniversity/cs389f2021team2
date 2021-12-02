@@ -49,7 +49,7 @@ TBD
 
 ### Sprint 3 
 
-* #### Sprint planning
+* #### [Sprint planning](https://docs.google.com/document/d/1W7Du96oJxOHP4fdQzwPRLGtBn7kCmeAmOmD6RXNkW_s/edit?usp=sharing)
 * Scrums
 * Sprint demo - video and apk (or equivalent)
 * Sprint retrospective
