@@ -74,6 +74,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void launchSettings(View view) {
+        startActivity(new Intent(this, SettingsActivity.class));
+    }
 
+    public void launchFoodRecs(View view) {
+        startActivity(new Intent(this, FoodRecommendations.class));
+    }
 
 }

@@ -87,7 +87,6 @@ public class SetGoalsActivity extends AppCompatActivity {
         ref.child("currentWeight").setValue(weight);
         //ref.child("weightsList").setValue(weights);
 
-        Toast.makeText(SetGoalsActivity.this, Integer.toString(goalCalories), Toast.LENGTH_SHORT).show();
         startActivity(new Intent(SetGoalsActivity.this, MainActivity.class));
     }
 }

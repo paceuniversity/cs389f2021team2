@@ -94,7 +94,7 @@
         android:text="@string/streakText"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="34sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -126,8 +126,10 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -160,7 +162,7 @@
                 android:id="@+id/foodrec"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="launchNutrition"
+                android:onClick="launchFoodRecs"
                 android:text="Food Reccomendations: Banana"
                 android:textAlignment="viewStart" />
 
@@ -197,7 +199,7 @@
                 android:id="@+id/more_settings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="launchMore"
+                android:onClick="launchSettings"
                 android:text="More: Settings" />
 
         </LinearLayout>
