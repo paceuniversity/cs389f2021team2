@@ -21,6 +21,8 @@ public class WeightActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     TextView startWeight;
+    TextView currentWeightShow;
+    TextView progressShow;
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
     FirebaseUser currentUser;
 
@@ -33,6 +35,8 @@ public class WeightActivity extends AppCompatActivity {
         currentUser = mAuth.getCurrentUser();
 
         startWeight = findViewById(R.id.user_start_weight);
+        currentWeightShow = findViewById(R.id.user_current_weight);
+        progressShow = findViewById(R.id.user_weight_progress);
 
         mDatabase.child("Users").child(currentUser.getUid()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
@@ -41,14 +45,26 @@ public class WeightActivity extends AppCompatActivity {
                     Log.e("firebase", "Error getting data", task.getException());
                 }
                 else {
+                    //Get and show starting weight
                     Log.d("firebase", String.valueOf(task.getResult().getValue()));
                     Log.d("firebase", task.getResult().child("startingWeight").getValue().toString());
                     String startingWeight = task.getResult().child("startingWeight").getValue().toString();
                     startWeight.setText(startingWeight);
+
+                    //Get and current weight
+                    Log.d("firebase", String.valueOf(task.getResult().getValue()));
+                    Log.d("firebase", task.getResult().child("currentWeight").getValue().toString());
+                    String currentWeight = task.getResult().child("currentWeight").getValue().toString();
+                    currentWeightShow.setText(currentWeight);
+
+                    double startingWeightDouble = Double.parseDouble(startingWeight);
+                    double currentWeightDouble = Double.parseDouble(currentWeight);
+                    double progress = startingWeightDouble - currentWeightDouble;
+                    String progressString = String.valueOf(progress);
+                    progressShow.setText(progressString);
                 }
             }
         });
-
     }
 
     public void launchHome(View view) {

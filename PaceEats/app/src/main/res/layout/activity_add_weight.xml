@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/newDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
@@ -74,7 +74,7 @@
         app:layout_constraintStart_toEndOf="@+id/date_text" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/newWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -102,9 +102,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Add"
-        android:onClick="launchWeight"
+        android:onClick="onAdd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/newWeight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

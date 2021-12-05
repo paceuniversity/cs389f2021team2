@@ -72,6 +72,7 @@ public class SetGoalsActivity extends AppCompatActivity {
         Date today = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
         String todayString = dateFormat.format(today).toString();
+        String firstEntry = (weight + " lbs - " + todayString);
 
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
         DatabaseReference ref = mDatabase.child(currentUser.getUid());
@@ -83,6 +84,7 @@ public class SetGoalsActivity extends AppCompatActivity {
 
         ref.child("calorieGoal").setValue(goalCalories);
         ref.child("startingWeight").setValue(weight);
+        ref.child("currentWeight").setValue(weight);
         //ref.child("weightsList").setValue(weights);
 
         startActivity(new Intent(SetGoalsActivity.this, MainActivity.class));
