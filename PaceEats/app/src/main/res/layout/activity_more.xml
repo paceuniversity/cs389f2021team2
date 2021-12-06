@@ -50,14 +50,19 @@
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="25dp"
+        android:layout_width="393dp"
+        android:layout_height="537dp"
         android:background="@color/white"
+        android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41">
 
         <Button
             android:id="@+id/buttonAbout"
@@ -71,12 +76,6 @@
             tools:text="@string/about" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp" />
-
-        <Button
             android:id="@+id/button_foodrec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,29 +84,16 @@
             android:paddingBottom="20dp"
             android:text="@string/food_recs"
             android:textSize="20sp"
-            tools:text="@string/food_recs" />
+            tools:text="@string/food_recs" /><![CDATA[
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
 
-            android:paddingBottom="20dp"/>
 
-            android:paddingBottom="20dp" />
 
+
+        ]]>
 
         <Button
             android:layout_width="match_parent"
@@ -121,7 +107,7 @@
 
             />
 
-            android:paddingBottom="20dp" />
+        android:paddingBottom="20dp" />
 
     </LinearLayout>
 
