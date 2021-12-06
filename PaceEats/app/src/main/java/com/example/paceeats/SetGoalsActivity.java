@@ -85,7 +85,8 @@ public class SetGoalsActivity extends AppCompatActivity {
         ref.child("calorieGoal").setValue(goalCalories);
         ref.child("startingWeight").setValue(weight);
         ref.child("currentWeight").setValue(weight);
-        //ref.child("weightsList").setValue(weights);
+        ref.child("currentCalories").setValue(0);
+        ref.child("currentCO2").setValue(0);
 
         startActivity(new Intent(SetGoalsActivity.this, MainActivity.class));
     }

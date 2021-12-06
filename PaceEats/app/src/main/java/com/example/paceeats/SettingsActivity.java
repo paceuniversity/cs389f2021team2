@@ -3,6 +3,7 @@ package com.example.paceeats;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -76,5 +77,10 @@ public class SettingsActivity extends AppCompatActivity {
     public void signOut(View view) {
         mAuth.signOut();
         startActivity(new Intent(SettingsActivity.this, LoginActivity.class));
+    }
+
+    public void openGithub(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/paceuniversity/cs389f2021team2"));
+        startActivity(browserIntent);
     }
 }
