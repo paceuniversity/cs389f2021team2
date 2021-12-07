@@ -17,6 +17,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.DecimalFormat;
+
 public class WeightActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
@@ -57,10 +59,15 @@ public class WeightActivity extends AppCompatActivity {
                     String currentWeight = task.getResult().child("currentWeight").getValue().toString();
                     currentWeightShow.setText(currentWeight);
 
+                    //Get and show progress
                     double startingWeightDouble = Double.parseDouble(startingWeight);
                     double currentWeightDouble = Double.parseDouble(currentWeight);
-                    double progress = startingWeightDouble - currentWeightDouble;
-                    String progressString = String.valueOf(progress);
+                    double progress = currentWeightDouble - startingWeightDouble;
+                    //Log.i("Hello", progress);
+                    DecimalFormat df = new DecimalFormat("#.#");
+                    String progressString = df.format(progress);
+                    progressString = progressString + "lbs";
+                    Log.i("Hello", progressString);
                     progressShow.setText(progressString);
                 }
             }

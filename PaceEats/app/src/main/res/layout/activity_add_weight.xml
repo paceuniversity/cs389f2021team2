@@ -80,7 +80,7 @@
         android:layout_marginStart="20dp"
         android:ems="10"
         android:hint="000.0"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/weight_text"
         app:layout_constraintStart_toEndOf="@+id/weight_text" />
