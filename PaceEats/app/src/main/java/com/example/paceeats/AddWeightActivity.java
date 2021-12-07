@@ -2,6 +2,7 @@ package com.example.paceeats;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,8 +10,15 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import org.w3c.dom.Comment;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,6 +27,8 @@ public class AddWeightActivity extends AppCompatActivity {
 
     EditText inputWeight;
     EditText inputDate;
+    private DatabaseReference mDatabase;
+    FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +36,7 @@ public class AddWeightActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_weight);
         inputWeight = findViewById(R.id.newWeight);
         inputDate = findViewById(R.id.newDate);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
     }
 
     public void onAdd(View view) {
@@ -35,6 +46,11 @@ public class AddWeightActivity extends AppCompatActivity {
         String newEntry = (newWeight + " lbs - " + newDate);
         double currentWeight = Double.parseDouble(inputWeight.getText().toString());
 
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+        DatabaseReference ref = mDatabase.child(currentUser.getUid());
+        ref.child("currentWeight").setValue(currentWeight);
 
 
         Log.i("Hello", newWeight);
