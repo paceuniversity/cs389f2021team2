@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/pace_yellow"
     tools:context=".WorkoutActitivity">
 
     <Button
@@ -54,26 +55,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/pace_yellow"
         android:text="Add Workout"
+        android:onClick="addWorkout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/workoutName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter a workout"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="139dp" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="220dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        android:text="Input Workouts that you wish to complete to begin.  "
+        android:text="Input Workouts that you wish to complete.  "
+        android:textColor="@color/theme_color"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="33dp" />
 
@@ -81,7 +76,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/pace_yellow"
         android:text="Complete"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="626dp" />
+
+    <TextView
+        android:id="@+id/enterWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="129dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

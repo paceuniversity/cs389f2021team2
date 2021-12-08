@@ -107,6 +107,16 @@
 
             />
 
+        <Button
+            android:id="@+id/buttonWorkouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20sp"
+            android:onClick="launchWorkout"
+            android:text="@string/buttonWorkout" />
+
         android:paddingBottom="20dp" />
 
     </LinearLayout>
