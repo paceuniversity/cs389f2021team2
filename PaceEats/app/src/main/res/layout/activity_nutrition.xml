@@ -76,17 +76,16 @@
 
     <ProgressBar
         android:id="@+id/calorieProgressBar"
-        style="?android:attr/progressBarStyle"
+        style="?android:progressBarStyleHorizontal"
         android:layout_width="138dp"
         android:layout_height="143dp"
         android:layout_marginTop="24dp"
-        android:indeterminate="false"
-        android:max="1000"
-        android:progress="0"
+        android:progress="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:progressDrawable="@drawable/custom_progress"/>
 
     <EditText
         android:id="@+id/enterFood"
