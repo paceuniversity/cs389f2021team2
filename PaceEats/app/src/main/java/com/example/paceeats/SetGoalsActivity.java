@@ -47,47 +47,56 @@ public class SetGoalsActivity extends AppCompatActivity {
     }
 
     public void onSubmit(View view) {
-        double bmr = 0;
-        int goalCalories = 0;
-        int age = Integer.parseInt(inputAge.getText().toString());
-        int height = Integer.parseInt(inputHeightInches.getText().toString()) + (Integer.parseInt(inputHeightFeet.getText().toString()) * 12);
-        int weight = Integer.parseInt(inputWeight.getText().toString());
-        if (radioMale.isChecked()) {
-            bmr = (10 * (weight / 2.205)) + (6.25 * (height * 2.54) - (5 * age) + 5);
-        }
-        else if (radioFemale.isChecked()) {
-            bmr = (10 * (weight / 2.205)) + (6.25 * (height * 2.54) - (5 * age) + 161);
-        }
 
-        if (radioLose.isChecked()) {
-            goalCalories = (int)Math.round(bmr - 500);
-        }
-        else if (radioGain.isChecked()) {
-            goalCalories = (int)Math.round(bmr + 500);
+        if ((!radioMale.isChecked() && !radioFemale.isChecked()) ||
+                (!radioGain.isChecked() && !radioLose.isChecked() && !radioMaintain.isChecked()) ||
+                inputWeight.getText().toString().equals("") ||
+                inputHeightFeet.getText().toString().equals("") ||
+                inputHeightInches.getText().toString().equals("") ||
+                inputAge.getText().toString().equals("")) {
+
+            Toast.makeText(SetGoalsActivity.this, "All fields must be filled out!", Toast.LENGTH_SHORT).show();
         }
         else {
-            goalCalories = (int)Math.round(bmr);
+
+            double bmr = 0;
+            int goalCalories = 0;
+            int age = Integer.parseInt(inputAge.getText().toString());
+            int height = Integer.parseInt(inputHeightInches.getText().toString()) + (Integer.parseInt(inputHeightFeet.getText().toString()) * 12);
+            int weight = Integer.parseInt(inputWeight.getText().toString());
+            if (radioMale.isChecked()) {
+                bmr = (10 * (weight / 2.205)) + (6.25 * (height * 2.54) - (5 * age) + 5);
+            } else if (radioFemale.isChecked()) {
+                bmr = (10 * (weight / 2.205)) + (6.25 * (height * 2.54) - (5 * age) + 161);
+            }
+
+            if (radioLose.isChecked()) {
+                goalCalories = (int) Math.round(bmr - 500);
+            } else if (radioGain.isChecked()) {
+                goalCalories = (int) Math.round(bmr + 500);
+            } else {
+                goalCalories = (int) Math.round(bmr);
+            }
+
+            Date today = new Date();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
+            String todayString = dateFormat.format(today).toString();
+            String firstEntry = (weight + " lbs - " + todayString);
+
+            DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+            DatabaseReference ref = mDatabase.child(currentUser.getUid());
+
+
+            //LinkedList<Integer> weights = new LinkedList();
+            //weights.add(weight);
+
+            ref.child("calorieGoal").setValue(goalCalories);
+            ref.child("startingWeight").setValue(weight);
+            ref.child("currentWeight").setValue(weight);
+            ref.child("currentCalories").setValue(0);
+            ref.child("currentCO2").setValue(0);
+
+            startActivity(new Intent(SetGoalsActivity.this, MainActivity.class));
         }
-
-        Date today = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
-        String todayString = dateFormat.format(today).toString();
-        String firstEntry = (weight + " lbs - " + todayString);
-
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
-        DatabaseReference ref = mDatabase.child(currentUser.getUid());
-
-
-
-        //LinkedList<Integer> weights = new LinkedList();
-        //weights.add(weight);
-
-        ref.child("calorieGoal").setValue(goalCalories);
-        ref.child("startingWeight").setValue(weight);
-        ref.child("currentWeight").setValue(weight);
-        ref.child("currentCalories").setValue(0);
-        ref.child("currentCO2").setValue(0);
-
-        startActivity(new Intent(SetGoalsActivity.this, MainActivity.class));
     }
 }
