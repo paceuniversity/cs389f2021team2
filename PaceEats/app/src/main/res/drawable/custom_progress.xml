@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/navigationBarBackground">
-        <shape>
+        <shape
             android:innerRadiusRatio= "2.3"
             android:shape="ring"
             android:useLevel="false"
             android:type="sweep"
             android:thicknessRatio="15.0">
-            <solid android:color="@color/theme_color"/>
+            <solid android:color="#FFD700"/>
         </shape>
     </item>
     <item android:id="@android:id/progress">
-        <rotate>
+        <rotate
             android:pivotX="50%"
             android:pivotY="50%"
             android:fromDegrees="-90"
-            android:toDegrees="-90"
-            <shape>
+            android:toDegrees="-90">
+            <shape
                 android:innerRadiusRatio="2.3"
                 android:shape="ring"
                 android:angle = "0"
                 android:type = "sweep"
-                android:thicknessRatio="15.0"
-                <solid android:color = "@color/theme_color"/>
+                android:thicknessRatio="15.0">
+                <solid android:color = "#FFD700"/>
             </shape>
         </rotate>
     </item>
