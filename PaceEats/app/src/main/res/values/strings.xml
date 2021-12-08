@@ -56,4 +56,5 @@
     <string name="lbs_co2">lbs of CO2 (optional)</string>
     <string name="slash">/</string>
     <string name="reset_current_cals">Reset Current Calories</string>
+    <string name="buttonWorkout">Workouts</string>
 </resources>

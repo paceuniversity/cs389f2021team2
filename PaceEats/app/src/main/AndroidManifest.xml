@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PaceEats">
         <activity
+            android:name=".AddWorkout"
+            android:exported="true" />
+        <activity
             android:name=".AddWeightActivity"
+            android:exported="false"
             android:label="Add Weight Activity"
-            android:parentActivityName=".WeightActivity"
-            android:exported="false" />
+            android:parentActivityName=".WeightActivity" />
         <activity
             android:name=".SettingsActivity"
             android:exported="true" />

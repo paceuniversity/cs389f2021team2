@@ -47,6 +47,11 @@ public class MoreActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void launchWorkout(View view){
+        Intent intent = new Intent(this,WorkoutActitivity.class);
+        startActivity(intent);
+    }
+
     public void launchAbout(View view) {
         startActivity(new Intent(this, AboutActivity.class));
     }
