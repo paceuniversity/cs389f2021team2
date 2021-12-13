@@ -1,9 +1,12 @@
 package com.example.paceeats;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,6 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.text.DecimalFormat;
+import java.util.Objects;
 
 public class WeightActivity extends AppCompatActivity {
 
@@ -25,6 +29,7 @@ public class WeightActivity extends AppCompatActivity {
     TextView startWeight;
     TextView currentWeightShow;
     TextView progressShow;
+    TextView feedback;
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
     FirebaseUser currentUser;
 
@@ -39,8 +44,10 @@ public class WeightActivity extends AppCompatActivity {
         startWeight = findViewById(R.id.user_start_weight);
         currentWeightShow = findViewById(R.id.user_current_weight);
         progressShow = findViewById(R.id.user_weight_progress);
+        feedback = findViewById(R.id.feedback_textView);
 
         mDatabase.child("Users").child(currentUser.getUid()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 if (!task.isSuccessful()) {
@@ -48,27 +55,89 @@ public class WeightActivity extends AppCompatActivity {
                 }
                 else {
                     //Get and show starting weight
-                    Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                    Log.d("firebase", task.getResult().child("startingWeight").getValue().toString());
-                    String startingWeight = task.getResult().child("startingWeight").getValue().toString();
+                    Log.d("firebase", String.valueOf(Objects.requireNonNull(task.getResult()).getValue()));
+                    Log.d("firebase", Objects.requireNonNull(task.getResult().child("startingWeight").getValue()).toString());
+                    String startingWeight = Objects.requireNonNull(task.getResult().child("startingWeight").getValue()).toString();
                     startWeight.setText(startingWeight);
 
                     //Get and current weight
                     Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                    Log.d("firebase", task.getResult().child("currentWeight").getValue().toString());
-                    String currentWeight = task.getResult().child("currentWeight").getValue().toString();
+                    Log.d("firebase", Objects.requireNonNull(task.getResult().child("currentWeight").getValue()).toString());
+                    String currentWeight = Objects.requireNonNull(task.getResult().child("currentWeight").getValue()).toString();
                     currentWeightShow.setText(currentWeight);
 
                     //Get and show progress
                     double startingWeightDouble = Double.parseDouble(startingWeight);
                     double currentWeightDouble = Double.parseDouble(currentWeight);
                     double progress = currentWeightDouble - startingWeightDouble;
-                    //Log.i("Hello", progress);
                     DecimalFormat df = new DecimalFormat("#.#");
                     String progressString = df.format(progress);
-                    progressString = progressString + "lbs";
-                    Log.i("Hello", progressString);
-                    progressShow.setText(progressString);
+                    String progressWithPounds = progressString + "lbs";
+                    if(progress > 0)
+                    {
+                        progressWithPounds = "+" + progressWithPounds;
+                    }
+                    Log.i("Hello", progressWithPounds);
+                    progressShow.setText(progressWithPounds);
+
+                    Log.d("firebase", String.valueOf(task.getResult().getValue()));
+                    Log.d("firebase", Objects.requireNonNull(task.getResult().child("goal").getValue()).toString());
+                    String userGoal = Objects.requireNonNull(task.getResult().child("goal").getValue()).toString();
+                    String feedbackText;
+                    if(userGoal.equals("lose"))
+                    {
+                        if(progress < 0) {
+                            feedbackText = "Great job! You have lost " + progressString + " pounds. Keep up the good work!";
+                            progressShow.setTextColor(Color.rgb(0, 200, 0));
+                        }
+                        else if(progress > 0)
+                        {
+                            feedbackText = "Consider using some of our food recommendations for some healthy options and try using our Nutrition Activity!";
+                            progressShow.setTextColor(Color.rgb(200 , 0, 0));
+                        }
+                        else
+                        {
+                            feedbackText = "Consider using some of our food recommendations for some healthy options and try using our Nutrition Activity!";
+                        }
+                        feedback.setText(feedbackText);
+                    }
+                    else if(userGoal.equals("maintain"))
+                    {
+                        if(progress == 0)
+                        {
+                            feedbackText = "Consider using using our nutrition activity to help maintain your weight!";
+                            progressShow.setTextColor(Color.rgb(0, 200, 0));
+                        }
+                        else if(progress <= 5 && progress >= -5)
+                        {
+                            feedbackText = "Great job! You have been maintaining your weight well, keep up the good work!";
+                            progressShow.setTextColor(Color.rgb(0, 200, 0));
+                        }
+                        else
+                        {
+                            feedbackText = "Consider using using our nutrition activity to help maintain your weight!";
+                            progressShow.setTextColor(Color.rgb(200, 0, 0));
+                        }
+                        feedback.setText(feedbackText);
+                    }
+                    else if(userGoal.equals("gain"))
+                    {
+                        if(progress > 0)
+                        {
+                            feedbackText = "Great job! You have gained " + progressString + " pounds. Keep up the good work!";
+                            progressShow.setTextColor(Color.rgb(0, 200, 0));
+                        }
+                        else if(progress == 0)
+                        {
+                            feedbackText = "Consider using some of our food recommendations for some healthy options and try using our Nutrition Activity!";
+                        }
+                        else
+                        {
+                            feedbackText = "Consider using some of our food recommendations for some healthy options and try using our Nutrition Activity!";
+                            progressShow.setTextColor(Color.rgb(200, 0, 0));
+                        }
+                        feedback.setText(feedbackText);
+                    }
                 }
             }
         });
