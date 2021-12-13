@@ -60,4 +60,9 @@
     <string name="progress_string">Progress</string>
     <string name="starting_weight_string">Starting Weight</string>
     <string name="current_weight_string">Current Weight</string>
+    <string-array name="suggested_foods">
+        <item>Rice Bowl</item>
+        <item>Wrap</item>
+        <item>Omelette</item>
+    </string-array>
 </resources>

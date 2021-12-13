@@ -65,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                                 DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
                                 DatabaseReference ref = mDatabase.child(user.getUid());
                                 ref.child("email").setValue(email.getText().toString());
-                                startActivity(new Intent(getApplicationContext(), SetGoalsActivity.class));
+                                startActivity(new Intent(LoginActivity.this, SetGoalsActivity.class));
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w(TAG, "createUserWithEmail:failure", task.getException());
