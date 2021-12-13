@@ -70,12 +70,18 @@ public class SetGoalsActivity extends AppCompatActivity {
                 bmr = (10 * (weight / 2.205)) + (6.25 * (height * 2.54) - (5 * age) + 161);
             }
 
+            DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+            DatabaseReference ref = mDatabase.child(currentUser.getUid());
+
             if (radioLose.isChecked()) {
                 goalCalories = (int) Math.round(bmr - 500);
+                ref.child("goal").setValue("lose");
             } else if (radioGain.isChecked()) {
                 goalCalories = (int) Math.round(bmr + 500);
+                ref.child("goal").setValue("gain");
             } else {
                 goalCalories = (int) Math.round(bmr);
+                ref.child("goal").setValue("maintain");
             }
 
             Date today = new Date();
@@ -83,8 +89,7 @@ public class SetGoalsActivity extends AppCompatActivity {
             String todayString = dateFormat.format(today).toString();
             String firstEntry = (weight + " lbs - " + todayString);
 
-            DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
-            DatabaseReference ref = mDatabase.child(currentUser.getUid());
+
 
 
             //LinkedList<Integer> weights = new LinkedList();
