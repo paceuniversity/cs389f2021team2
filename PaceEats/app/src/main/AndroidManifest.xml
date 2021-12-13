@@ -19,7 +19,8 @@
             android:parentActivityName=".WeightActivity" />
         <activity
             android:name=".SettingsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MoreActivity"/>
         <activity
             android:name=".AboutActivity"
             android:exported="true"

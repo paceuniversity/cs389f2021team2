@@ -1,9 +1,12 @@
 package com.example.paceeats;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -14,8 +17,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.*;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
-import java.util.LinkedList;
 
 public class SetGoalsActivity extends AppCompatActivity {
 
@@ -46,6 +50,7 @@ public class SetGoalsActivity extends AppCompatActivity {
         radioGain = findViewById(R.id.radioGain);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void onSubmit(View view) {
 
         if ((!radioMale.isChecked() && !radioFemale.isChecked()) ||
@@ -84,17 +89,18 @@ public class SetGoalsActivity extends AppCompatActivity {
                 ref.child("goal").setValue("maintain");
             }
 
+            //Date today = new Date();
+            //SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
+            //String todayString = dateFormat.format(today).toString();
+            //String firstEntry = (weight + " lbs - " + todayString);
+
             Date today = new Date();
-            SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             String todayString = dateFormat.format(today).toString();
-            String firstEntry = (weight + " lbs - " + todayString);
+            LocalDate startingDate = LocalDate.parse(todayString);
+            Log.i("Hello", String.valueOf(startingDate));
 
-
-
-
-            //LinkedList<Integer> weights = new LinkedList();
-            //weights.add(weight);
-
+            ref.child("startingDate").setValue(todayString);
             ref.child("calorieGoal").setValue(goalCalories);
             ref.child("startingWeight").setValue(weight);
             ref.child("currentWeight").setValue(weight);
