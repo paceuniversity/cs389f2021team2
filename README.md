@@ -53,6 +53,7 @@ TBD
 * Scrums
   * [Dec 6, 2021](https://docs.google.com/document/d/1HOH2ukJ17H5QcMWqL8Ije-covoK40FiqoMV8rVIXvoc/edit?usp=sharing)
   * [Dec 8, 2021](https://docs.google.com/document/d/12db687F6JgoJfIscgpEB3jmTxg4X2-sbw15hkPfAFgI/edit?usp=sharing)
+  * [Dec 13, 2021](https://docs.google.com/document/d/1TIRZed6DJiut9XFYyG8_65YWksVJAkbeYFOwn56ZUHQ/edit?usp=sharing)
 * Sprint demo - video and apk (or equivalent)
 * Sprint retrospective
 
