@@ -8,14 +8,13 @@
 
     <Button
         android:id="@+id/button_home"
-        android:layout_width="0dp"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/theme_color"
         android:onClick="launchHome"
         android:text="@string/home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_nutrition"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/button_nutrition" />
 
     <Button
         android:id="@+id/button_nutrition"
@@ -52,20 +51,22 @@
         android:id="@+id/calorieGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:text="Calorie Goal"
         android:textAlignment="center"
         android:textColor="@color/theme_color"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/calorieProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/currentCaloriesText"
         app:layout_constraintStart_toEndOf="@+id/calorieProgressBar"
         app:layout_constraintTop_toBottomOf="@+id/currentCaloriesText" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="393dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="341dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
         android:text="Add food too reach your calorie goal !"
         android:textAlignment="center"
         android:textColor="@color/theme_color"
@@ -79,11 +80,10 @@
         style="?android:progressBarStyleHorizontal"
         android:layout_width="138dp"
         android:layout_height="143dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
         android:progress="100"
         android:progressDrawable="@drawable/custom_progress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,24 +91,21 @@
         android:id="@+id/button_submitFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:onClick="submitFood"
         android:text="Submit Food"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/foodSpinner" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:text="@string/custom_food_track"
         android:textColor="@color/theme_color"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/foodSpinner"
         app:layout_constraintTop_toBottomOf="@+id/foodSpinner" />
 
     <EditText
@@ -139,34 +136,30 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="36dp"
         android:onClick="logCustom"
         android:text="@string/submit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/inputCustomCO2"
-        app:layout_constraintTop_toBottomOf="@+id/button_submitFood" />
+        app:layout_constraintBottom_toTopOf="@+id/inputCustomCO2"
+        app:layout_constraintEnd_toEndOf="@+id/button_submitFood"
+        app:layout_constraintTop_toBottomOf="@+id/inputCustomCals" />
 
     <TextView
         android:id="@+id/currentCaloriesText"
         android:layout_width="163dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
         android:text="curr"
         android:textAlignment="center"
         android:textColor="@color/theme_color"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/calorieProgressBar"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/calorieProgressBar" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="28dp"
         android:onClick="resetCals"
         android:text="@string/reset_current_cals"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,10 +169,9 @@
     <Spinner
         android:id="@+id/foodSpinner"
         android:layout_width="172dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="44dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_submitFood"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
 
