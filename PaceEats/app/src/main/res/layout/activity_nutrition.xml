@@ -80,12 +80,12 @@
         android:layout_width="138dp"
         android:layout_height="143dp"
         android:layout_marginTop="24dp"
-        android:progress="10"
+        android:progress="30"
+        android:progressDrawable="@drawable/custom_progress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:progressDrawable="@drawable/custom_progress"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_submitFood"
