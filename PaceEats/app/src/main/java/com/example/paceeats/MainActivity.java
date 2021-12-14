@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     String todayString = dateFormat.format(today).toString();
 
                     //Change to local date
-                    LocalDate firstDate = LocalDate.parse(todayString);
+                    LocalDate firstDate = LocalDate.parse(startDate);
                     LocalDate todaysDate = LocalDate.parse(todayString);
 
                     //Get days between and set text
