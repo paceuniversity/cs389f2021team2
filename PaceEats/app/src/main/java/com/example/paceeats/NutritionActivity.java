@@ -134,7 +134,7 @@ public class NutritionActivity extends AppCompatActivity {
     public void logCustom(View view) {
         final int cals, co2;
         cals = Integer.parseInt(customCals.getText().toString());
-        //co2 = Integer.parseInt(customCO2.getText().toString());
+        co2 = Integer.parseInt(customCO2.getText().toString());
 
         mDatabase.child("Users").child(currentUser.getUid()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
@@ -145,10 +145,13 @@ public class NutritionActivity extends AppCompatActivity {
                 else {
                     Log.d("firebase", String.valueOf(task.getResult().getValue()));
                     int currCals = Integer.parseInt(task.getResult().child("currentCalories").getValue().toString());
+                    int currCO2 = Integer.parseInt(task.getResult().child("currentCO2").getValue().toString());
+                    int newCO2 = co2 + currCO2;
                     int newCals = cals + currCals;
 
                     // Update current calories display and current calories in the databse
                     mDatabase.child("Users").child(currentUser.getUid()).child("currentCalories").setValue(newCals);
+                    mDatabase.child("Users").child(currentUser.getUid()).child("currentCO2").setValue(newCO2);
                     String currCalsString = String.valueOf(newCals);
                     currentCaloriesText.setText(currCalsString + " of");
                 }
@@ -158,6 +161,7 @@ public class NutritionActivity extends AppCompatActivity {
 
     public void resetCals(View view) {
         mDatabase.child("Users").child(currentUser.getUid()).child("currentCalories").setValue(0);
+        mDatabase.child("Users").child(currentUser.getUid()).child("currentCO2").setValue(0);
         currentCaloriesText.setText("0 of");
     }
 }

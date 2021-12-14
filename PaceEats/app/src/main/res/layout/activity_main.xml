@@ -103,9 +103,10 @@
         android:id="@+id/footprint"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="1dp"
         android:layout_marginBottom="10dp"
         android:text="@string/carbon_footprint"
+        android:textAlignment="center"
         android:textIsSelectable="false"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/currentFootprint"
@@ -116,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="15dp"
         android:text="@string/app_streak"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/appStreak"
@@ -156,7 +157,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="launchNutrition"
-            android:text="@string/nutrition"
+            android:text="@string/log_calories"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -165,7 +166,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="launchWeight"
-            android:text="@string/weight"
+            android:text="@string/enter_current_weight"
             android:textSize="20sp" />
 
         <Button
