@@ -80,7 +80,7 @@
         android:layout_width="138dp"
         android:layout_height="143dp"
         android:layout_marginTop="24dp"
-        android:progress="30"
+        android:progress="100"
         android:progressDrawable="@drawable/custom_progress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
