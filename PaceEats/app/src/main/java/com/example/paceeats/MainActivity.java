@@ -1,6 +1,5 @@
 package com.example.paceeats;
 
-import androidx.annotation.LongDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,10 +17,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -34,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     TextView textCalorieGoal;
     Button footprint;
+    Button weight;
     Button appStreak;
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
     FirebaseUser currentUser;
@@ -49,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         textCalorieGoal = findViewById(R.id.textCalorieGoal);
         appStreak = findViewById(R.id.appStreak);
         footprint = findViewById(R.id.currentFootprint);
+        weight = findViewById(R.id.currentWeight);
 
         mDatabase.child("Users").child(currentUser.getUid()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @RequiresApi(api = Build.VERSION_CODES.O)
@@ -59,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     Log.d("firebase", String.valueOf(Objects.requireNonNull(task.getResult()).getValue()));
-                    Log.d("firebase", task.getResult().child("calorieGoal").getValue().toString());
-                    String calorieGoal = task.getResult().child("calorieGoal").getValue().toString();
+                    Log.d("firebase", Objects.requireNonNull(task.getResult().child("calorieGoal").getValue()).toString());
+                    String calorieGoal = Objects.requireNonNull(task.getResult().child("calorieGoal").getValue()).toString();
                     textCalorieGoal.setText(calorieGoal);
 
                     //Receive starting date
                     Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                    Log.d("firebase", task.getResult().child("startingDate").getValue().toString());
+                    Log.d("firebase", Objects.requireNonNull(task.getResult().child("startingDate").getValue()).toString());
                     String startDate = task.getResult().child("startingDate").getValue().toString();
 
                     //Get todays date
@@ -84,8 +83,14 @@ public class MainActivity extends AppCompatActivity {
                     appStreak.setText(streakString);
 
                     //Get and set carbon footprint text
-                    String currentCO2 = task.getResult().child("currentCO2").getValue().toString();
-                    footprint.setText(currentCO2 + " lbs of CO2");
+                    String currentCO2 = Objects.requireNonNull(task.getResult().child("currentCO2").getValue()).toString();
+                    currentCO2 = currentCO2 + " lbs of CO2";
+                    footprint.setText(currentCO2);
+
+                    //Get and set current weight text
+                    String currentWeight = Objects.requireNonNull(task.getResult().child("currentWeight").getValue()).toString();
+                    currentWeight = currentWeight + " lbs";
+                    weight.setText(currentWeight);
                 }
             }
         });
