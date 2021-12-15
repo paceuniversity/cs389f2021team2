@@ -159,12 +159,7 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginTop="56dp"
-        android:layout_marginBottom="20dp"
-=======
         android:layout_marginTop="28dp"
->>>>>>> c2417f95861af0d8f5312dde9e20c4577803dc35
         android:onClick="resetCals"
         android:text="@string/reset_current_cals"
         app:layout_constraintBottom_toTopOf="@+id/button_nutrition"
