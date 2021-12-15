@@ -55,7 +55,9 @@ TBD
   * [Dec 8, 2021](https://docs.google.com/document/d/12db687F6JgoJfIscgpEB3jmTxg4X2-sbw15hkPfAFgI/edit?usp=sharing)
   * [Dec 13, 2021](https://docs.google.com/document/d/1TIRZed6DJiut9XFYyG8_65YWksVJAkbeYFOwn56ZUHQ/edit?usp=sharing)
 * Sprint demo - video and apk (or equivalent)
-* Sprint retrospective
+  * [Video](https://www.youtube.com/watch?v=azNKBwwDGXw&feature=youtu.be)
+  * [APK](https://drive.google.com/file/d/1CDQM8B8QQ4fDywzvNiLvWdfZz0I-31Te/view?usp=sharing)
+* [Sprint retrospective](https://docs.google.com/document/d/1vxTxtmRRqdmLv4H0zAqDhKeyqll7GcgzjdGPH__7-J4/edit?usp=sharing)
 
 ### Final presentation
 
