@@ -46,109 +46,113 @@
         android:text="@string/button_more"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints" /><![CDATA[
 
-    <TextView
-        android:id="@+id/Rec1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@color/white"
-        android:text="@string/rice_bowl"
-        android:textAlignment="center"
-        android:textColor="@color/theme_color"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/Rec1text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/white"
-        android:text="@string/first_start_with_white_rice_from_the_chinese_station_order_a_turkey_burger_with_peppers_and_onions_from_the_grill_station_ask_them_to_chop_the_burger_then_add_the_chopped_burger_with_your_toppings_to_the_white_rice_add_sauce_if_you_would_like"
-        android:textAlignment="center"
-        android:textColor="@color/theme_color"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rec1" /><![CDATA[
 
     app:layout_constraintTop_toBottomOf="@+id/editTextRec1text" />
 
 
+
+
+
+
+
+
+    app:layout_constraintTop_toBottomOf="@+id/editTextRec2text" />
+
+
     ]]>
 
-    <TextView
-        android:id="@+id/Rec2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@color/white"
-        android:text="@string/wrap"
-        android:textAlignment="center"
-        android:textColor="@color/theme_color"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rec1text" />
-
-    <TextView
-        android:id="@+id/Rec2text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/white"
-        android:text="@string/for_a_nice_yummy_wrap_from_the_sandwich_station_order_a_whole_wheat_spinach_or_tomato_wrap_add_grilled_chicken_mozzarella_cheese_roasted_red_peppers_and_a_little_of_balsamic_dressing"
-        android:textAlignment="center"
-        android:textColor="@color/theme_color"
-        android:textSize="20sp"
+    <ScrollView
+        android:layout_width="394dp"
+        android:layout_height="635dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rec2" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/Rec3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@color/white"
-        android:text="@string/omelette"
-        android:textAlignment="center"
-        android:textColor="@color/theme_color"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rec2text" />
+            <TextView
+                android:id="@+id/Rec1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:text="@string/rice_bowl"
+                android:textAlignment="center"
+                android:textColor="@color/theme_color"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
 
-        app:layout_constraintTop_toBottomOf="@+id/editTextRec2text" />
+            <TextView
+                android:id="@+id/Rec1text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:text="@string/first_start_with_white_rice_from_the_chinese_station_order_a_turkey_burger_with_peppers_and_onions_from_the_grill_station_ask_them_to_chop_the_burger_then_add_the_chopped_burger_with_your_toppings_to_the_white_rice_add_sauce_if_you_would_like"
+                android:textAlignment="center"
+                android:textColor="@color/theme_color"
+                android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/Rec2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:text="@string/wrap"
+                android:textAlignment="center"
+                android:textColor="@color/theme_color"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/white"
-        android:text="@string/start_your_morning_off_with_a_healthy_breakfast_from_the_gill_station_order_an_egg_white_omlete_with_toppings_like_spinach_peppers_onions_chese_tomatoes_etc_you_could_pair_this_with_a_yogurt_or_smoothie_from_the_smoothie_station"
-        android:textAlignment="center"
-        android:textColor="@color/theme_color"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rec3" />
+                />
 
+            <TextView
+                android:id="@+id/Rec2text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:text="@string/for_a_nice_yummy_wrap_from_the_sandwich_station_order_a_whole_wheat_spinach_or_tomato_wrap_add_grilled_chicken_mozzarella_cheese_roasted_red_peppers_and_a_little_of_balsamic_dressing"
+                android:textAlignment="center"
+                android:textColor="@color/theme_color"
+                android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/Rec3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:text="@string/omelette"
+                android:textAlignment="center"
+                android:textColor="@color/theme_color"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+
+                />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:text="@string/start_your_morning_off_with_a_healthy_breakfast_from_the_gill_station_order_an_egg_white_omlete_with_toppings_like_spinach_peppers_onions_chese_tomatoes_etc_you_could_pair_this_with_a_yogurt_or_smoothie_from_the_smoothie_station"
+                android:textAlignment="center"
+                android:textColor="@color/theme_color"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
