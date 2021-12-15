@@ -27,11 +27,13 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     TextView textCalorieGoal;
+    Button footprint;
     Button appStreak;
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
     FirebaseUser currentUser;
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         textCalorieGoal = findViewById(R.id.textCalorieGoal);
         appStreak = findViewById(R.id.appStreak);
+        footprint = findViewById(R.id.currentFootprint);
 
         mDatabase.child("Users").child(currentUser.getUid()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @RequiresApi(api = Build.VERSION_CODES.O)
@@ -55,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("firebase", "Error getting data", task.getException());
                 }
                 else {
-                    Log.d("firebase", String.valueOf(task.getResult().getValue()));
+                    Log.d("firebase", String.valueOf(Objects.requireNonNull(task.getResult()).getValue()));
                     Log.d("firebase", task.getResult().child("calorieGoal").getValue().toString());
                     String calorieGoal = task.getResult().child("calorieGoal").getValue().toString();
                     textCalorieGoal.setText(calorieGoal);
@@ -71,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     String todayString = dateFormat.format(today).toString();
 
                     //Change to local date
-                    LocalDate firstDate = LocalDate.parse(todayString);
+                    LocalDate firstDate = LocalDate.parse(startDate);
                     LocalDate todaysDate = LocalDate.parse(todayString);
 
                     //Get days between and set text
@@ -79,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
                     String streakString = String.valueOf(streak);
                     streakString = streakString + " Days";
                     appStreak.setText(streakString);
+
+                    //Get and set carbon footprint text
+                    String currentCO2 = task.getResult().child("currentCO2").getValue().toString();
+                    footprint.setText(currentCO2 + " lbs of CO2");
                 }
             }
         });

@@ -40,7 +40,7 @@
     <string name="rice_bowl">Rice Bowl</string>
     <string name="footprint_text">3 lbs CO2</string>
     <string name="app_streak">App Streak</string>
-    <string name="carbon_footprint">Carbon Footprint This Week</string>
+    <string name="carbon_footprint">Carbon Footprint Today</string>
     <string name="streakText">7 days</string>
     <string name="user_start_weight">TextView</string>
     <string name="change_password">Change Password</string>
@@ -55,11 +55,13 @@
     <string name="calories">Calories</string>
     <string name="lbs_co2">lbs of CO2 (optional)</string>
     <string name="slash">/</string>
-    <string name="reset_current_cals">Reset Current Calories</string>
+    <string name="reset_current_cals">Reset Current Calories and CO2</string>
     <string name="buttonWorkout">Workouts</string>
     <string name="progress_string">Progress</string>
     <string name="starting_weight_string">Starting Weight</string>
     <string name="current_weight_string">Current Weight</string>
+    <string name="log_calories">Log Calories</string>
+    <string name="enter_current_weight">Enter Current Weight</string>
     <string-array name="suggested_foods">
         <item>Rice Bowl</item>
         <item>Wrap</item>

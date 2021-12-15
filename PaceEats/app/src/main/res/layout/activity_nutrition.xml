@@ -162,6 +162,7 @@
         android:layout_marginTop="28dp"
         android:onClick="resetCals"
         android:text="@string/reset_current_cals"
+        app:layout_constraintBottom_toTopOf="@+id/button_nutrition"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputCustomCO2" />
