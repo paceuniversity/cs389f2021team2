@@ -62,6 +62,7 @@
     <string name="current_weight_string">Current Weight</string>
     <string name="log_calories">Log Calories</string>
     <string name="enter_current_weight">Enter Current Weight</string>
+    <string name="current_weight_text">Current Weight</string>
     <string-array name="suggested_foods">
         <item>Rice Bowl</item>
         <item>Wrap</item>
