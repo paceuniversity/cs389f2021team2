@@ -107,16 +107,28 @@ public class NutritionActivity extends AppCompatActivity {
                 else {
                     Log.d("firebase", String.valueOf(task.getResult().getValue()));
                     int currCals = Integer.parseInt(task.getResult().child("currentCalories").getValue().toString());
+                    int currCO2 = Integer.parseInt(task.getResult().child("currentCO2").getValue().toString());
                     int newCals = currCals;
-                    if (foodName.equals("Rice Bowl"))
+                    int newCO2 = currCO2;
+                    if (foodName.equals("Rice Bowl")) {
                         newCals = 575 + currCals;
-                    else if (foodName.equals("Wrap"))
+                        newCO2 = 1 + currCO2;
+                    }
+
+                    else if (foodName.equals("Wrap")) {
                         newCals = 540 + currCals;
-                    else if (foodName.equals("Omelette"))
+                        newCO2 = 2 + currCO2;
+                    }
+
+                    else if (foodName.equals("Omelette")) {
                         newCals = 250 + currCals;
+                        newCO2 = 3 + currCO2;
+                    }
+
 
                     // Update current calories display and current calories in the databse
                     mDatabase.child("Users").child(currentUser.getUid()).child("currentCalories").setValue(newCals);
+                    mDatabase.child("Users").child(currentUser.getUid()).child("currentCO2").setValue(newCO2);
                     String currCalsString = String.valueOf(newCals);
                     currentCaloriesText.setText(currCalsString + " of");
                 }
