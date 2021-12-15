@@ -75,29 +75,31 @@
         android:id="@+id/currentFootprint"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="25dp"
         android:background="@drawable/button_round"
         android:text="@string/footprint_text"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/footprint"
+        app:layout_constraintStart_toStartOf="@+id/footprint"
+        app:layout_constraintTop_toTopOf="@+id/appStreak" />
 
     <Button
         android:id="@+id/appStreak"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/button_round"
         android:text="@string/streakText"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textCalorieGoal" />
 
     <TextView
         android:id="@+id/footprint"
@@ -116,14 +118,15 @@
         android:id="@+id/appstreak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/app_streak"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/appStreak"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="250dp"
