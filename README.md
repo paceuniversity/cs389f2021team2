@@ -10,7 +10,7 @@
 * [Tyheir Brooks](https://github.com/tydolla00)
 
 ## App Description
-Our app aims to help Pace students eat healthier and more sustainably at dining locations on campus. Users are able to track their calorie and macronutrient intake as well as the carbon footprint that results from the production of the food that they eat. There is also a leaderboard where users can compete against their friends to see who eats most sustainably in a given day/week/month. 
+Our app aims to help Pace students eat healthier and more sustainably at dining locations on campus. Users are able to track their calorie intake as well as the carbon footprint that results from the production of the food that they eat. There is also food reccomendations to help users find healthy options and weight tracking to help users achieve their goal weight. 
 
 ### [Idea Proposal](https://docs.google.com/document/d/1Njk3AQPWHmfTjU64ocGTOqFZbfn33G_1rbS3lhi4GrI/edit?usp=sharing)
 
