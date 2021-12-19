@@ -59,7 +59,7 @@ TBD
   * [APK](https://drive.google.com/file/d/1CDQM8B8QQ4fDywzvNiLvWdfZz0I-31Te/view?usp=sharing)
 * [Sprint retrospective](https://docs.google.com/document/d/1vxTxtmRRqdmLv4H0zAqDhKeyqll7GcgzjdGPH__7-J4/edit?usp=sharing)
 
-### Final presentation
+### [Final presentation](https://docs.google.com/presentation/d/14XRP-0HUs-0Rqlvh_PmQk_OXXLyI_06pobr9wPQTrG8/edit?usp=sharing)
 
 ### Poster
 
