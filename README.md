@@ -62,7 +62,7 @@ TBD
 ### [Final presentation](https://docs.google.com/presentation/d/14XRP-0HUs-0Rqlvh_PmQk_OXXLyI_06pobr9wPQTrG8/edit?usp=sharing)
 * [Final Demo Video](https://youtu.be/N5FC_tkaz70)
 
-### Poster
+### [Poster](https://docs.google.com/presentation/d/1gS2J1c16n6Y1M7gVxc7PC3f0sVEshUxlWj0fnXAXPNg/edit?usp=sharing)
 
 ### Process description
 
