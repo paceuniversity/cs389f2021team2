@@ -57,4 +57,7 @@
     <string name="slash">/</string>
     <string name="reset_current_cals">Reset Current Calories</string>
     <string name="buttonWorkout">Workouts</string>
+    <string name="input_workouts">Input Workouts that you wish to complete.</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="button_complete">Complete</string>
 </resources>

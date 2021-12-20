@@ -57,6 +57,9 @@
                 android:value="com.example.paceeats.MainActivity" />
         </activity>
         <activity
+            android:name=".WorkoutActitivity"
+            android:value="com.example.paceeats.MainActivity"/>
+        <activity
             android:name=".MoreActivity"
             android:label="More Activity"
             android:parentActivityName=".MainActivity">
