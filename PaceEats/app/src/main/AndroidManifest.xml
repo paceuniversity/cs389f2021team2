@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.paceeats">
+    package="me.kevinlutz.paceeats">
 
     <application
         android:allowBackup="true"
@@ -10,30 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PaceEats">
         <activity
-            android:name=".AddWorkout"
+            android:name="me.kevinlutz.paceeats.AddWorkout"
             android:exported="true" />
         <activity
-            android:name=".AddWeightActivity"
+            android:name="me.kevinlutz.paceeats.AddWeightActivity"
             android:exported="false"
             android:label="Add Weight Activity"
-            android:parentActivityName=".WeightActivity" />
+            android:parentActivityName="me.kevinlutz.paceeats.WeightActivity" />
         <activity
-            android:name=".SettingsActivity"
+            android:name="me.kevinlutz.paceeats.SettingsActivity"
             android:exported="true"
-            android:parentActivityName=".MoreActivity"/>
+            android:parentActivityName="me.kevinlutz.paceeats.MoreActivity"/>
         <activity
-            android:name=".AboutActivity"
+            android:name="me.kevinlutz.paceeats.AboutActivity"
             android:exported="true"
-            android:parentActivityName=".MoreActivity" />
+            android:parentActivityName="me.kevinlutz.paceeats.MoreActivity" />
         <activity
-            android:name=".FoodRecommendations"
+            android:name="me.kevinlutz.paceeats.FoodRecommendations"
             android:exported="true"
-            android:parentActivityName=".MoreActivity" />
+            android:parentActivityName="me.kevinlutz.paceeats.MoreActivity" />
         <activity
-            android:name=".SetGoalsActivity"
+            android:name="me.kevinlutz.paceeats.SetGoalsActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name="me.kevinlutz.paceeats.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,31 +42,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NutritionActivity"
+            android:name="me.kevinlutz.paceeats.NutritionActivity"
             android:label="Nutrition Activity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="me.kevinlutz.paceeats.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.paceeats.MainActivity" />
+                android:value="me.kevinlutz.paceeats.MainActivity" />
         </activity>
         <activity
-            android:name=".WeightActivity"
+            android:name="me.kevinlutz.paceeats.WeightActivity"
             android:label="Weight Activity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="me.kevinlutz.paceeats.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.paceeats.MainActivity" />
+                android:value="me.kevinlutz.paceeats.MainActivity" />
         </activity>
         <activity
-            android:name=".MoreActivity"
+            android:name="me.kevinlutz.paceeats.MoreActivity"
             android:label="More Activity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="me.kevinlutz.paceeats.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.paceeats.MainActivity" />
+                android:value="me.kevinlutz.paceeats.MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="me.kevinlutz.paceeats.MainActivity"
             android:exported="true" />
     </application>
 

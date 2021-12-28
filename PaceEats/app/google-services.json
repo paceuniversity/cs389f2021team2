@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:128184739102:android:9fd0c647fbfc4799d7150f",
         "android_client_info": {
-          "package_name": "com.example.paceeats"
+          "package_name": "me.kevinlutz.paceeats"
         }
       },
       "oauth_client": [
