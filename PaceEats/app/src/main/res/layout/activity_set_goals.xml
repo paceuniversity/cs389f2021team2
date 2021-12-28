@@ -11,9 +11,8 @@
         android:layout_width="181dp"
         android:layout_height="53dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
 
         <RadioButton
@@ -81,11 +80,10 @@
         android:layout_width="75dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/inches"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
 
     <EditText
@@ -93,11 +91,10 @@
         android:layout_width="75dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="86dp"
         android:ems="10"
         android:hint="@string/weight"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputAge"
         app:layout_constraintTop_toBottomOf="@+id/inputAge" />
 
     <RadioGroup
@@ -105,8 +102,7 @@
         android:layout_width="97dp"
         android:layout_height="145dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="74dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputWeight"
         app:layout_constraintTop_toBottomOf="@+id/inputWeight">
 
         <RadioButton
@@ -133,7 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="50dp"
         android:text="@string/weight_goal"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toStartOf="@+id/goalRadioGroup"
@@ -144,11 +140,11 @@
         android:layout_width="75dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="86dp"
+        android:layout_marginEnd="54dp"
         android:ems="10"
         android:hint="@string/age"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputHeightInches"
         app:layout_constraintTop_toBottomOf="@+id/inputHeightFeet" />
 
     <TextView
@@ -183,5 +179,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="361dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

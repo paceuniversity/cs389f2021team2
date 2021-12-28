@@ -142,7 +142,6 @@ public class NutritionActivity extends AppCompatActivity {
 
 
     // Log custom foods (calories and CO2)
-    // TODO: Add Functionality for CO2 tracking, it's currently disabled!
     public void logCustom(View view) {
         final int cals, co2;
         cals = Integer.parseInt(customCals.getText().toString());

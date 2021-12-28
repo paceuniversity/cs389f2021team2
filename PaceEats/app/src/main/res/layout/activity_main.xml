@@ -31,7 +31,8 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentWeightText" />
+        app:layout_constraintTop_toBottomOf="@+id/currentWeightText"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button_home"
@@ -46,33 +47,37 @@
 
     <Button
         android:id="@+id/button_nutrition"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/theme_color"
         android:onClick="launchNutrition"
         android:text="@string/nutrition"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_weight" />
+        app:layout_constraintEnd_toStartOf="@+id/button_weight"
+        app:layout_constraintStart_toEndOf="@+id/button_home" />
 
     <Button
         android:id="@+id/button_weight"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/theme_color"
         android:onClick="launchWeight"
         android:text="@string/weight"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_more" />
+        app:layout_constraintEnd_toStartOf="@+id/button_more"
+        app:layout_constraintStart_toEndOf="@+id/button_nutrition" />
 
     <Button
         android:id="@+id/button_more"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/theme_color"
         android:onClick="launchMore"
         android:text="@string/button_more"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_weight"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -154,16 +159,17 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="387dp"
+        android:layout_height="477dp"
         android:layout_marginTop="300dp"
+        android:layout_marginEnd="6dp"
         android:background="@color/white"
         android:orientation="vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-
 
 
         <Button
